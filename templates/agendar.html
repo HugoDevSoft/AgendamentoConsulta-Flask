@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendar Consulta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Agendar Consulta</h1>
+    <form method="POST">
+        Nome: <input type="text" name="nome" required><br><br>
+        Data: <input type="date" name="data" required><br><br>
+        Horário: <input type="time" name="horario" required><br><br>
+        <button type="submit">Agendar</button>
+    </form>
+    <a href="{{ url_for('home') }}">Voltar</a>
+</body>
+</html>

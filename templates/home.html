@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Lista de Agendamentos</h1>
+    <a href="{{ url_for('agendar') }}">Novo Agendamento</a>
+    <ul>
+    {% for agendamento in agendamentos %}
+        <li>{{ agendamento.nome }} - {{ agendamento.data }} às {{ agendamento.horario }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
