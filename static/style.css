@@ -1,22 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
     color: #333;
 }
 
-a {
-    color: blue;
-    text-decoration: none;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-a:hover {
-    text-decoration: underline;
+input[type="text"],
+input[type="email"],
+input[type="date"],
+button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    padding: 8px 12px;
-    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.agendamentos {
+    margin-top: 30px;
+}
+
+.agendamento {
+    background: #e0f7fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
 }
