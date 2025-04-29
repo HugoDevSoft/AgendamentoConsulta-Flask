@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Agendamentos</title>
+    <title>Bem-vindo - Agendamento de Consultas</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function toggleAgendamentos() {
+            var lista = document.getElementById("lista-agendamentos");
+            if (lista.style.display === "none" || lista.style.display === "") {
+                lista.style.display = "block";
+            } else {
+                lista.style.display = "none";
+            }
+        }
+    </script>
 </head>
+
 <body>
-    <h1>Lista de Agendamentos</h1>
-    <a href="{{ url_for('agendar') }}">Novo Agendamento</a>
-    <ul>
-    {% for agendamento in agendamentos %}
-        <li>{{ agendamento.nome }} - {{ agendamento.data }} às {{ agendamento.horario }}</li>
-    {% endfor %}
-    </ul>
+    <div class="container">
+        <h1>Bem-vindo ao Sistema de Agendamento</h1>
+        <p>Agende sua consulta de forma rápida e prática.</p>
+
+        <a href="{{ url_for('agendar') }}" class="button">Agendar Consulta</a>
+        <button class="button" onclick="toggleAgendamentos()">Ver Agendamentos</button>
+
+        <div id="lista-agendamentos" style="display:none; margin-top: 20px;">
+            <h2>Consultas Já Agendadas</h2>
+            {% if agendamentos %}
+            {% for agendamento in agendamentos %}
+            <div class="agendamento">
+                <p><strong>Nome:</strong> {{ agendamento['nome'] }}</p>
+                <p><strong>Email:</strong> {{ agendamento['email'] }}</p>
+                <p><strong>Data:</strong> {{ agendamento['data'] }}</p>
+            </div>
+            {% endfor %}
+            {% else %}
+            <p>Nenhuma consulta agendada ainda.</p>
+            {% endif %}
+        </div>
+    </div>
 </body>
+
 </html>

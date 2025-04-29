@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sucesso</title>
+    <title>Consulta Agendada com Sucesso</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <h1>Agendamento realizado com sucesso!</h1>
-    <a href="{{ url_for('home') }}">Ver agendamentos</a>
+    <div class="container">
+        <h1>Consulta Agendada com Sucesso!</h1>
+        <p>Você agendou uma consulta com sucesso. Em breve, entraremos em contato.</p>
+        <a href="{{ url_for('home') }}" class="button">Voltar para a página inicial</a>
+    </div>
 </body>
+
 </html>

@@ -13,18 +13,10 @@ def home():
 def agendar():
     if request.method == 'POST':
         nome = request.form['nome']
+        email = request.form['email']
         data = request.form['data']
-        horario = request.form['horario']
-
-        agendamento = {
-            'nome': nome,
-            'data': data,
-            'horario': horario
-        }
-
-        agendamentos.append(agendamento)
-        return redirect(url_for('sucesso'))
-
+        agendamentos.append({'nome': nome, 'email': email, 'data': data})
+        return redirect('/sucesso')
     return render_template('agendar.html')
 
 @app.route('/sucesso')
