@@ -1,9 +1,9 @@
-# 🏥 Agendamento de Consultas - Flask
+Agendamento de Consultas - Flask
 
 Projeto de sistema de agendamento de consultas , desenvolvido como prática de back-end com Flask e front-end com HTML/CSS.
 
 
-## 🛠 Tecnologias utilizadas
+Tecnologias utilizadas
 - Python 
 - Flask
 - HTML5
@@ -11,7 +11,7 @@ Projeto de sistema de agendamento de consultas , desenvolvido como prática de b
 
 
 
-## ⚙ Funcionalidades
+Funcionalidades
 - Listar todos os agendamentos realizados.
 - Formulário para novo agendamento de consulta.
 - Página de confirmação após agendamento.
