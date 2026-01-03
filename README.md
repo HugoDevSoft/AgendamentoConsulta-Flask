@@ -23,6 +23,9 @@ Funcionalidades
 
 <img width="1910" height="524" alt="Captura de tela 2026-01-03 184403" src="https://github.com/user-attachments/assets/d9538222-761c-4196-9657-77ad068dee9e" />
 
+<img width="1383" height="99" alt="image" src="https://github.com/user-attachments/assets/7b509eb4-3ac8-4678-a911-44605a7943c4" />
+
+
   
 Melhorias futuras
 Integração com banco de dados (SQLite ou MySQL).
@@ -32,5 +35,6 @@ Validação de formulário mais robusta.
 Autenticação de usuários (login e senha).
 
 Design responsivo para dispositivos móveis.
+
 
 
