@@ -17,16 +17,13 @@ Funcionalidades
 - Página de confirmação após agendamento.
 - Armazenamento temporário dos dados em memória (não persistente).
 
-- <img width="1919" height="337" alt="image" src="https://github.com/user-attachments/assets/55afdce4-bbb9-4384-acb5-d7f29d58e18f" />
+<img width="1919" height="337" alt="Captura de tela 2026-01-03 183943" src="https://github.com/user-attachments/assets/bc6e010b-ef93-47d0-983f-43cccb960cd0" />
 
-![image](https://github.com/user-attachments/assets/c3922a0f-c09c-48f1-8814-765227fb00dc)
+<img width="1814" height="336" alt="Captura de tela 2026-01-03 184351" src="https://github.com/user-attachments/assets/10de9ba3-c6e0-43d8-ad6e-8fc9ffd399aa" />
 
-![image](https://github.com/user-attachments/assets/1a3d3fce-12fe-43c0-a8bf-b8146012dc2d)
+<img width="1910" height="524" alt="Captura de tela 2026-01-03 184403" src="https://github.com/user-attachments/assets/d9538222-761c-4196-9657-77ad068dee9e" />
 
-![image](https://github.com/user-attachments/assets/8edffb5e-dfed-4686-a521-a78de3118587)
-
-
-
+  
 Melhorias futuras
 Integração com banco de dados (SQLite ou MySQL).
 
@@ -35,4 +32,5 @@ Validação de formulário mais robusta.
 Autenticação de usuários (login e senha).
 
 Design responsivo para dispositivos móveis.
+
 
